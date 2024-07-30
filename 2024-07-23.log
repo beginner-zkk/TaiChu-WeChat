@@ -1,0 +1,717 @@
+[2024-07-23 06:56:34 1761] [DEBUG] [6] 料仓skuid读取完毕
+[2024-07-23 06:56:34 5068] [ERROR] [6] 连接plc失败！错误码：-1; Socket Connect 192.168.8.10:102 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.10:102
+[2024-07-23 06:56:34 6434] [DEBUG] [6] 采集器初始化完成
+[2024-07-23 06:56:35 4584] [ERROR] [6] Error: token获取异常  System.AggregateException: 发生一个或多个错误。 ---> Flurl.Http.FlurlHttpException: Call failed. 发送请求时出错。: POST http://47.114.126.3:9993/api/User/innerLogin ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 47.114.126.3:9993
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Flurl.Http.FlurlRequest.<HandleExceptionAsync>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 IOT.Serve.Upload.GetToken() 位置 D:\work\IOT_Price\IOT_Price\IOT_Price\Serve\Upload.cs:行号 283
+---> (内部异常 #0) Flurl.Http.FlurlHttpException: Call failed. 发送请求时出错。: POST http://47.114.126.3:9993/api/User/innerLogin ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 47.114.126.3:9993
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Flurl.Http.FlurlRequest.<HandleExceptionAsync>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()<---
+
+[2024-07-23 06:56:35 4594] [DEBUG] [6] 采集器打开成功
+[2024-07-23 06:56:35 4619] [INFO] [6] MB从站启动成功
+[2024-07-23 06:56:35 4739] [INFO] [23] 开启数据采集
+[2024-07-23 06:56:35 8305] [INFO] [1] 数据库清理已完成，清理数量： t_info_record = 0t_price_info_record = 0t_power_record = 0
+[2024-07-23 06:56:38 3469] [ERROR] [23] GX1 : Socket Connect 192.168.8.20:502 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.20:502
+[2024-07-23 06:56:38 5792] [ERROR] [23] PLC1 : Socket Connect 192.168.8.10:102 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.10:102
+[2024-07-23 06:56:42 4305] [ERROR] [23] GX1 : Socket Connect 192.168.8.20:502 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.20:502
+[2024-07-23 06:56:42 6488] [ERROR] [23] PLC1 : Socket Connect 192.168.8.10:102 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.10:102
+[2024-07-23 06:56:45 7128] [INFO] [6] 开启上传任务！
+[2024-07-23 06:56:46 2780] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:56:50 5246] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:56:54 6521] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:56:58 7947] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:57:03 0282] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:57:05 6906] [DEBUG] [26] 盘库总重量上传成功：weight = 8967
+[2024-07-23 06:57:05 7829] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 06:57:07 1719] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:57:11 3093] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:57:15 4444] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:57:19 5841] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:57:23 8381] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:57:27 9841] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:57:32 1232] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:57:36 2588] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:57:40 4032] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:57:44 4218] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:57:48 5696] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:57:52 3854] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:57:56 1988] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:58:00 1159] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:58:04 0343] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:58:07 9611] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:58:11 8910] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:58:15 8168] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:58:19 7405] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:58:23 6683] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:58:27 5879] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:58:31 6159] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:58:35 5416] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:58:39 5752] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:58:43 6005] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:58:47 4196] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:58:51 2402] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:58:55 0617] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:58:58 9858] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:59:02 9142] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:59:06 9572] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:59:10 9957] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:59:14 9154] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:59:18 8466] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:59:22 7780] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:59:26 7018] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:59:30 6224] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:59:34 5403] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:59:38 3607] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:59:42 3807] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:59:46 2976] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:59:50 1133] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:59:53 9375] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 06:59:57 8549] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:00:01 6628] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:00:05 5928] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:00:09 4052] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:00:13 4355] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:00:17 3563] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:00:21 3850] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:00:25 3143] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:00:29 2388] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:00:33 1645] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:00:37 0868] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:00:41 1302] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:00:45 0546] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:00:48 9763] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:00:52 8886] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:00:56 8083] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:01:00 7306] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:01:04 6479] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:01:08 5652] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:01:12 3793] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:01:16 1959] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:01:20 1176] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:01:24 0378] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:01:27 9702] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:01:32 0037] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:01:35 9266] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:01:39 8434] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:01:43 8715] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:01:47 7912] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:01:51 6090] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:01:55 5288] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:01:59 4453] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:02:03 3672] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:02:05 9120] [DEBUG] [26] 盘库总重量上传成功：weight = 8972
+[2024-07-23 07:02:05 9767] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 07:02:07 4025] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:02:11 3305] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:02:15 2520] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:02:19 1802] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:02:23 1042] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:02:27 1289] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:02:31 0462] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:02:34 9758] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:02:38 7898] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:02:42 7126] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:02:46 7436] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:02:50 5594] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:02:54 3793] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:02:58 3039] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:03:02 2227] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:03:06 1461] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:03:10 0666] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:03:13 9849] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:03:17 9213] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:03:21 8471] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:03:25 8844] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:03:29 8101] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:03:33 7266] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:03:37 7589] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:03:41 6835] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:03:45 6010] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:03:49 5280] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:03:53 4571] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:03:57 3946] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:04:01 3207] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:04:05 1390] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:04:09 0688] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:04:12 9983] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:04:16 9272] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:04:20 9624] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:04:24 8944] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:04:28 9299] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:04:32 9600] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:04:36 8886] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:04:40 8103] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:04:44 7298] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:04:48 5396] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:04:52 6886] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:04:56 8362] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:05:00 9809] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:05:05 0226] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:05:09 0574] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:05:13 2012] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 07:07:06 0804] [DEBUG] [26] 盘库总重量上传成功：weight = 8978
+[2024-07-23 07:07:06 1462] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 07:12:06 2442] [DEBUG] [26] 盘库总重量上传成功：weight = 8877
+[2024-07-23 07:12:06 3067] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 07:17:06 4030] [DEBUG] [26] 盘库总重量上传成功：weight = 8860
+[2024-07-23 07:17:06 4676] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 07:22:06 5714] [DEBUG] [26] 盘库总重量上传成功：weight = 8890
+[2024-07-23 07:22:06 6388] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 07:27:06 7480] [DEBUG] [26] 盘库总重量上传成功：weight = 8954
+[2024-07-23 07:27:06 8152] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 07:32:06 9005] [DEBUG] [26] 盘库总重量上传成功：weight = 8975
+[2024-07-23 07:32:06 9595] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 07:37:07 0733] [DEBUG] [26] 盘库总重量上传成功：weight = 8950
+[2024-07-23 07:37:07 1325] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 07:42:07 2284] [DEBUG] [26] 盘库总重量上传成功：weight = 8949
+[2024-07-23 07:42:07 2867] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 07:47:07 3768] [DEBUG] [26] 盘库总重量上传成功：weight = 8983
+[2024-07-23 07:47:07 4382] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 07:52:07 5298] [DEBUG] [26] 盘库总重量上传成功：weight = 8864
+[2024-07-23 07:52:07 5923] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 07:57:07 6847] [DEBUG] [26] 盘库总重量上传成功：weight = 8913
+[2024-07-23 07:57:07 7480] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 08:02:07 8480] [DEBUG] [26] 盘库总重量上传成功：weight = 8920
+[2024-07-23 08:02:07 9168] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 08:07:08 0179] [DEBUG] [26] 盘库总重量上传成功：weight = 8902
+[2024-07-23 08:07:08 0779] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 08:12:08 1702] [DEBUG] [26] 盘库总重量上传成功：weight = 8797
+[2024-07-23 08:12:08 2310] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 08:17:08 3298] [DEBUG] [26] 盘库总重量上传成功：weight = 8700
+[2024-07-23 08:17:08 3917] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 08:22:08 5023] [DEBUG] [26] 盘库总重量上传成功：weight = 8749
+[2024-07-23 08:22:08 5719] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 08:27:08 6613] [DEBUG] [26] 盘库总重量上传成功：weight = 8747
+[2024-07-23 08:27:08 7180] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 08:32:08 8230] [DEBUG] [26] 盘库总重量上传成功：weight = 8789
+[2024-07-23 08:32:08 8901] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 08:37:08 9813] [DEBUG] [26] 盘库总重量上传成功：weight = 8838
+[2024-07-23 08:37:09 0469] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 08:42:09 1372] [DEBUG] [26] 盘库总重量上传成功：weight = 8963
+[2024-07-23 08:42:09 1978] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 08:47:09 2817] [DEBUG] [26] 盘库总重量上传成功：weight = 9185
+[2024-07-23 08:47:09 3416] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 08:52:09 4327] [DEBUG] [26] 盘库总重量上传成功：weight = 9327
+[2024-07-23 08:52:09 4920] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 08:57:09 5921] [DEBUG] [26] 盘库总重量上传成功：weight = 9465
+[2024-07-23 08:57:09 6587] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 09:02:09 7502] [DEBUG] [26] 盘库总重量上传成功：weight = 9325
+[2024-07-23 09:02:09 8108] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 09:07:09 8984] [DEBUG] [26] 盘库总重量上传成功：weight = 9495
+[2024-07-23 09:07:09 9565] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 09:12:10 0665] [DEBUG] [26] 盘库总重量上传成功：weight = 9476
+[2024-07-23 09:12:10 1350] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 09:17:10 2255] [DEBUG] [26] 盘库总重量上传成功：weight = 9502
+[2024-07-23 09:17:10 2815] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 09:22:10 3802] [DEBUG] [26] 盘库总重量上传成功：weight = 9357
+[2024-07-23 09:22:10 4391] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 09:27:10 5232] [DEBUG] [26] 盘库总重量上传成功：weight = 9376
+[2024-07-23 09:27:10 5800] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 09:32:10 6680] [DEBUG] [26] 盘库总重量上传成功：weight = 9299
+[2024-07-23 09:32:10 7299] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 09:37:10 8215] [DEBUG] [26] 盘库总重量上传成功：weight = 9417
+[2024-07-23 09:37:10 8813] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 09:42:10 9924] [DEBUG] [26] 盘库总重量上传成功：weight = 9459
+[2024-07-23 09:42:11 0659] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 09:47:11 1621] [DEBUG] [26] 盘库总重量上传成功：weight = 9603
+[2024-07-23 09:47:11 2200] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 09:52:11 3272] [DEBUG] [26] 盘库总重量上传成功：weight = 9712
+[2024-07-23 09:52:11 3960] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 09:57:11 4835] [DEBUG] [26] 盘库总重量上传成功：weight = 9859
+[2024-07-23 09:57:11 5437] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 10:02:11 6384] [DEBUG] [26] 盘库总重量上传成功：weight = 9913
+[2024-07-23 10:02:11 7006] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 10:07:11 7861] [DEBUG] [26] 盘库总重量上传成功：weight = 9914
+[2024-07-23 10:07:11 8459] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 10:12:11 9469] [DEBUG] [26] 盘库总重量上传成功：weight = 9915
+[2024-07-23 10:12:12 0093] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 10:17:12 1281] [DEBUG] [26] 盘库总重量上传成功：weight = 9922
+[2024-07-23 10:17:12 1924] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 10:22:12 2949] [DEBUG] [26] 盘库总重量上传成功：weight = 9932
+[2024-07-23 10:22:12 3614] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 10:27:12 4618] [DEBUG] [26] 盘库总重量上传成功：weight = 9931
+[2024-07-23 10:27:12 5220] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 10:32:12 6209] [DEBUG] [26] 盘库总重量上传成功：weight = 9933
+[2024-07-23 10:32:12 6852] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 10:36:09 9862] [DEBUG] [6] 料仓skuid读取完毕
+[2024-07-23 10:36:10 3434] [ERROR] [6] 连接plc失败！错误码：-1; Socket Connect 192.168.8.10:102 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.10:102
+[2024-07-23 10:36:10 4814] [DEBUG] [6] 采集器初始化完成
+[2024-07-23 10:36:11 2787] [ERROR] [6] Error: token获取异常  System.AggregateException: 发生一个或多个错误。 ---> Flurl.Http.FlurlHttpException: Call failed. 发送请求时出错。: POST http://47.114.126.3:9993/api/User/innerLogin ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 47.114.126.3:9993
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Flurl.Http.FlurlRequest.<HandleExceptionAsync>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 IOT.Serve.Upload.GetToken() 位置 D:\work\IOT_Price\IOT_Price\IOT_Price\Serve\Upload.cs:行号 283
+---> (内部异常 #0) Flurl.Http.FlurlHttpException: Call failed. 发送请求时出错。: POST http://47.114.126.3:9993/api/User/innerLogin ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 47.114.126.3:9993
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Flurl.Http.FlurlRequest.<HandleExceptionAsync>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()<---
+
+[2024-07-23 10:36:11 2797] [DEBUG] [6] 采集器打开成功
+[2024-07-23 10:36:11 2817] [INFO] [6] MB从站启动成功
+[2024-07-23 10:36:11 2972] [INFO] [23] 开启数据采集
+[2024-07-23 10:36:11 8430] [INFO] [1] 数据库清理已完成，清理数量： t_info_record = 0t_price_info_record = 0t_power_record = 0
+[2024-07-23 10:36:14 1526] [ERROR] [23] GX1 : Socket Connect 192.168.8.20:502 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.20:502
+[2024-07-23 10:36:14 3838] [ERROR] [23] PLC1 : Socket Connect 192.168.8.10:102 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.10:102
+[2024-07-23 10:36:18 2314] [ERROR] [23] GX1 : Socket Connect 192.168.8.20:502 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.20:502
+[2024-07-23 10:36:18 4495] [ERROR] [23] PLC1 : Socket Connect 192.168.8.10:102 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.10:102
+[2024-07-23 10:36:21 5354] [INFO] [6] 开启上传任务！
+[2024-07-23 10:36:22 4263] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 10:36:26 6741] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 10:36:30 9240] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 10:36:34 9546] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 10:36:38 9852] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 10:36:41 5244] [DEBUG] [26] 盘库总重量上传成功：weight = 9896
+[2024-07-23 10:36:41 6179] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 10:36:43 4470] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 10:36:47 9224] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 10:36:52 3837] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 10:36:56 7467] [ERROR] [23] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 10:41:41 7207] [DEBUG] [26] 盘库总重量上传成功：weight = 9592
+[2024-07-23 10:41:41 7841] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 10:46:41 8805] [DEBUG] [26] 盘库总重量上传成功：weight = 9457
+[2024-07-23 10:46:41 9391] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 10:51:42 0480] [DEBUG] [26] 盘库总重量上传成功：weight = 9345
+[2024-07-23 10:51:42 1168] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 10:56:42 2053] [DEBUG] [26] 盘库总重量上传成功：weight = 9471
+[2024-07-23 10:56:42 2628] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 11:01:42 3632] [DEBUG] [26] 盘库总重量上传成功：weight = 9699
+[2024-07-23 11:01:42 4252] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 11:06:42 5162] [DEBUG] [26] 盘库总重量上传成功：weight = 9806
+[2024-07-23 11:06:42 5806] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 11:11:42 6926] [DEBUG] [26] 盘库总重量上传成功：weight = 9917
+[2024-07-23 11:11:42 7543] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 11:16:42 8610] [DEBUG] [26] 盘库总重量上传成功：weight = 9752
+[2024-07-23 11:16:42 9313] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 11:21:43 0643] [DEBUG] [26] 盘库总重量上传成功：weight = 9346
+[2024-07-23 11:21:43 1218] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 11:26:43 2221] [DEBUG] [26] 盘库总重量上传成功：weight = 9183
+[2024-07-23 11:26:43 2856] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 11:31:43 3928] [DEBUG] [26] 盘库总重量上传成功：weight = 9077
+[2024-07-23 11:31:43 4569] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 11:36:43 5492] [DEBUG] [26] 盘库总重量上传成功：weight = 9165
+[2024-07-23 11:36:43 6086] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 11:41:43 7108] [DEBUG] [26] 盘库总重量上传成功：weight = 9179
+[2024-07-23 11:41:43 7768] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 11:46:43 8833] [DEBUG] [26] 盘库总重量上传成功：weight = 9379
+[2024-07-23 11:46:43 9489] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 11:51:44 0441] [DEBUG] [26] 盘库总重量上传成功：weight = 9470
+[2024-07-23 11:51:44 1074] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 11:56:44 1898] [DEBUG] [26] 盘库总重量上传成功：weight = 9669
+[2024-07-23 11:56:44 2503] [DEBUG] [26] 盘库数据上传成功!
+[2024-07-23 12:19:38 7499] [DEBUG] [6] 料仓skuid读取完毕
+[2024-07-23 12:19:39 1384] [ERROR] [6] 连接plc失败！错误码：-1; Socket Connect 192.168.8.10:102 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.10:102
+[2024-07-23 12:19:39 2774] [DEBUG] [6] 采集器初始化完成
+[2024-07-23 12:19:39 9817] [ERROR] [6] Error: token获取异常  System.AggregateException: 发生一个或多个错误。 ---> Flurl.Http.FlurlHttpException: Call failed. 发送请求时出错。: POST http://47.114.126.3:9993/api/User/innerLogin ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 47.114.126.3:9993
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Flurl.Http.FlurlRequest.<HandleExceptionAsync>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 IOT.Serve.Upload.GetToken() 位置 D:\work\IOT_Price\IOT_Price\IOT_Price\Serve\Upload.cs:行号 283
+---> (内部异常 #0) Flurl.Http.FlurlHttpException: Call failed. 发送请求时出错。: POST http://47.114.126.3:9993/api/User/innerLogin ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 47.114.126.3:9993
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Flurl.Http.FlurlRequest.<HandleExceptionAsync>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()<---
+
+[2024-07-23 12:19:39 9827] [DEBUG] [6] 采集器打开成功
+[2024-07-23 12:19:39 9837] [INFO] [6] MB从站启动成功
+[2024-07-23 12:19:39 9977] [INFO] [22] 开启数据采集
+[2024-07-23 12:19:40 4511] [INFO] [1] 数据库清理已完成，清理数量： t_info_record = 0t_price_info_record = 0t_power_record = 0
+[2024-07-23 12:19:42 8749] [ERROR] [22] GX1 : Socket Connect 192.168.8.20:502 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.20:502
+[2024-07-23 12:19:43 1038] [ERROR] [22] PLC1 : Socket Connect 192.168.8.10:102 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.10:102
+[2024-07-23 12:19:46 9505] [ERROR] [22] GX1 : Socket Connect 192.168.8.20:502 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.20:502
+[2024-07-23 12:19:47 1708] [ERROR] [22] PLC1 : Socket Connect 192.168.8.10:102 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.10:102
+[2024-07-23 12:19:50 2270] [INFO] [6] 开启上传任务！
+[2024-07-23 12:19:50 7948] [ERROR] [22] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 12:19:55 1607] [ERROR] [22] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 12:19:59 3021] [ERROR] [22] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 12:20:03 4434] [ERROR] [22] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 12:20:07 4789] [ERROR] [22] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 12:20:10 1966] [DEBUG] [25] 盘库总重量上传成功：weight = 9647
+[2024-07-23 12:20:10 2889] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 12:20:11 7267] [ERROR] [22] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 12:20:16 1949] [ERROR] [22] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 12:20:20 5440] [ERROR] [22] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 12:20:25 0081] [ERROR] [22] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-23 12:25:10 3841] [DEBUG] [25] 盘库总重量上传成功：weight = 9649
+[2024-07-23 12:25:10 4435] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 12:30:10 5409] [DEBUG] [25] 盘库总重量上传成功：weight = 9503
+[2024-07-23 12:30:10 6030] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 12:35:10 7080] [DEBUG] [25] 盘库总重量上传成功：weight = 9493
+[2024-07-23 12:35:10 7732] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 12:40:10 8734] [DEBUG] [25] 盘库总重量上传成功：weight = 9531
+[2024-07-23 12:40:10 9379] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 12:45:11 0274] [DEBUG] [25] 盘库总重量上传成功：weight = 9560
+[2024-07-23 12:45:11 0884] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 12:50:11 2016] [DEBUG] [25] 盘库总重量上传成功：weight = 9580
+[2024-07-23 12:50:11 2636] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 12:55:11 3548] [DEBUG] [25] 盘库总重量上传成功：weight = 9566
+[2024-07-23 12:55:11 4125] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 13:00:11 5033] [DEBUG] [25] 盘库总重量上传成功：weight = 9675
+[2024-07-23 13:00:11 5675] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 13:05:11 6651] [DEBUG] [25] 盘库总重量上传成功：weight = 9423
+[2024-07-23 13:05:11 7276] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 13:10:11 8474] [DEBUG] [25] 盘库总重量上传成功：weight = 9510
+[2024-07-23 13:10:11 9238] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 13:15:12 0161] [DEBUG] [25] 盘库总重量上传成功：weight = 9454
+[2024-07-23 13:15:12 0799] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 13:20:12 1789] [DEBUG] [25] 盘库总重量上传成功：weight = 9426
+[2024-07-23 13:20:12 2363] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 13:25:12 3383] [DEBUG] [25] 盘库总重量上传成功：weight = 9441
+[2024-07-23 13:25:12 4033] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 13:30:12 4978] [DEBUG] [25] 盘库总重量上传成功：weight = 9418
+[2024-07-23 13:30:12 5606] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 13:35:12 6896] [DEBUG] [25] 盘库总重量上传成功：weight = 9376
+[2024-07-23 13:35:12 7516] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 13:40:12 8456] [DEBUG] [25] 盘库总重量上传成功：weight = 9432
+[2024-07-23 13:40:12 9058] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 13:45:13 0101] [DEBUG] [25] 盘库总重量上传成功：weight = 9495
+[2024-07-23 13:45:13 0790] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 13:50:13 1695] [DEBUG] [25] 盘库总重量上传成功：weight = 9538
+[2024-07-23 13:50:13 2286] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 13:55:13 3326] [DEBUG] [25] 盘库总重量上传成功：weight = 9589
+[2024-07-23 13:55:13 3937] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 14:00:13 4985] [DEBUG] [25] 盘库总重量上传成功：weight = 9625
+[2024-07-23 14:00:13 5698] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 14:05:13 6794] [DEBUG] [25] 盘库总重量上传成功：weight = 9602
+[2024-07-23 14:05:13 7478] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 14:10:13 8516] [DEBUG] [25] 盘库总重量上传成功：weight = 9461
+[2024-07-23 14:10:13 9127] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 14:15:14 0110] [DEBUG] [25] 盘库总重量上传成功：weight = 9256
+[2024-07-23 14:15:14 0719] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 14:20:14 1751] [DEBUG] [25] 盘库总重量上传成功：weight = 9183
+[2024-07-23 14:20:14 2428] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 14:25:14 3522] [DEBUG] [25] 盘库总重量上传成功：weight = 9048
+[2024-07-23 14:25:14 4187] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 14:30:14 5201] [DEBUG] [25] 盘库总重量上传成功：weight = 9135
+[2024-07-23 14:30:14 5899] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 14:35:14 6835] [DEBUG] [25] 盘库总重量上传成功：weight = 9241
+[2024-07-23 14:35:14 7425] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 14:40:14 8424] [DEBUG] [25] 盘库总重量上传成功：weight = 9308
+[2024-07-23 14:40:14 9055] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 14:45:15 8543] [DEBUG] [25] 盘库总重量上传成功：weight = 9314
+[2024-07-23 14:45:16 1145] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 14:50:16 2059] [DEBUG] [25] 盘库总重量上传成功：weight = 9436
+[2024-07-23 14:50:16 2669] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 14:55:16 3601] [DEBUG] [25] 盘库总重量上传成功：weight = 9406
+[2024-07-23 14:55:16 4231] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 15:00:16 5286] [DEBUG] [25] 盘库总重量上传成功：weight = 9399
+[2024-07-23 15:00:16 6012] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 15:05:16 7070] [DEBUG] [25] 盘库总重量上传成功：weight = 9640
+[2024-07-23 15:05:16 7722] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 15:10:16 8683] [DEBUG] [25] 盘库总重量上传成功：weight = 9832
+[2024-07-23 15:10:16 9308] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 15:15:17 0277] [DEBUG] [25] 盘库总重量上传成功：weight = 9970
+[2024-07-23 15:15:17 0900] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 15:20:17 1758] [DEBUG] [25] 盘库总重量上传成功：weight = 10014
+[2024-07-23 15:20:17 2364] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 15:25:17 3344] [DEBUG] [25] 盘库总重量上传成功：weight = 9710
+[2024-07-23 15:25:17 4000] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 15:30:17 5070] [DEBUG] [25] 盘库总重量上传成功：weight = 9386
+[2024-07-23 15:30:17 5755] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 15:35:17 6575] [DEBUG] [25] 盘库总重量上传成功：weight = 9171
+[2024-07-23 15:35:17 7155] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 15:40:17 8181] [DEBUG] [25] 盘库总重量上传成功：weight = 9071
+[2024-07-23 15:40:17 8812] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 15:45:17 9734] [DEBUG] [25] 盘库总重量上传成功：weight = 8986
+[2024-07-23 15:45:18 0339] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 15:50:18 1294] [DEBUG] [25] 盘库总重量上传成功：weight = 8982
+[2024-07-23 15:50:18 1869] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 15:55:18 2817] [DEBUG] [25] 盘库总重量上传成功：weight = 9105
+[2024-07-23 15:55:18 3399] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 16:00:18 4538] [DEBUG] [25] 盘库总重量上传成功：weight = 9198
+[2024-07-23 16:00:18 5238] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 16:05:18 6213] [DEBUG] [25] 盘库总重量上传成功：weight = 9294
+[2024-07-23 16:05:18 6834] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 16:10:18 7825] [DEBUG] [25] 盘库总重量上传成功：weight = 9294
+[2024-07-23 16:10:18 8496] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 16:15:18 9403] [DEBUG] [25] 盘库总重量上传成功：weight = 9159
+[2024-07-23 16:15:19 0041] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 16:20:19 1058] [DEBUG] [25] 盘库总重量上传成功：weight = 8842
+[2024-07-23 16:20:19 1682] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 16:25:19 2733] [DEBUG] [25] 盘库总重量上传成功：weight = 8876
+[2024-07-23 16:25:19 3398] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 16:30:19 4348] [DEBUG] [25] 盘库总重量上传成功：weight = 8757
+[2024-07-23 16:30:19 4983] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 16:35:19 5917] [DEBUG] [25] 盘库总重量上传成功：weight = 8698
+[2024-07-23 16:35:19 6551] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 16:40:19 7413] [DEBUG] [25] 盘库总重量上传成功：weight = 8741
+[2024-07-23 16:40:19 8017] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 16:45:19 9032] [DEBUG] [25] 盘库总重量上传成功：weight = 8902
+[2024-07-23 16:45:19 9704] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 16:50:20 0618] [DEBUG] [25] 盘库总重量上传成功：weight = 9044
+[2024-07-23 16:50:20 1239] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 16:55:20 2180] [DEBUG] [25] 盘库总重量上传成功：weight = 9203
+[2024-07-23 16:55:20 2799] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 17:00:20 3767] [DEBUG] [25] 盘库总重量上传成功：weight = 9313
+[2024-07-23 17:00:20 4375] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 17:05:20 5337] [DEBUG] [25] 盘库总重量上传成功：weight = 9378
+[2024-07-23 17:05:20 5963] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 17:10:20 6841] [DEBUG] [25] 盘库总重量上传成功：weight = 9418
+[2024-07-23 17:10:20 7445] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 17:15:20 8266] [DEBUG] [25] 盘库总重量上传成功：weight = 9253
+[2024-07-23 17:15:20 8822] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 17:20:20 9693] [DEBUG] [25] 盘库总重量上传成功：weight = 9108
+[2024-07-23 17:20:21 0259] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 17:25:21 1352] [DEBUG] [25] 盘库总重量上传成功：weight = 8949
+[2024-07-23 17:25:21 2049] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 17:30:21 3126] [DEBUG] [25] 盘库总重量上传成功：weight = 8951
+[2024-07-23 17:30:21 3787] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 17:35:21 4680] [DEBUG] [25] 盘库总重量上传成功：weight = 9069
+[2024-07-23 17:35:21 5275] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 17:40:21 6200] [DEBUG] [25] 盘库总重量上传成功：weight = 8923
+[2024-07-23 17:40:21 6860] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 17:45:21 7844] [DEBUG] [25] 盘库总重量上传成功：weight = 8939
+[2024-07-23 17:45:21 8495] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 17:50:21 9382] [DEBUG] [25] 盘库总重量上传成功：weight = 9050
+[2024-07-23 17:50:21 9964] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 17:55:22 0912] [DEBUG] [25] 盘库总重量上传成功：weight = 9021
+[2024-07-23 17:55:22 1508] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 18:00:22 2471] [DEBUG] [25] 盘库总重量上传成功：weight = 9034
+[2024-07-23 18:00:22 3060] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 18:05:22 4149] [DEBUG] [25] 盘库总重量上传成功：weight = 9182
+[2024-07-23 18:05:22 4838] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 18:10:22 5747] [DEBUG] [25] 盘库总重量上传成功：weight = 9094
+[2024-07-23 18:10:22 6349] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 18:15:22 7328] [DEBUG] [25] 盘库总重量上传成功：weight = 9114
+[2024-07-23 18:15:22 7983] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 18:20:22 8881] [DEBUG] [25] 盘库总重量上传成功：weight = 9206
+[2024-07-23 18:20:22 9450] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 18:25:23 0524] [DEBUG] [25] 盘库总重量上传成功：weight = 9270
+[2024-07-23 18:25:23 1184] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 18:30:23 2083] [DEBUG] [25] 盘库总重量上传成功：weight = 9283
+[2024-07-23 18:30:23 2671] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 18:35:23 3656] [DEBUG] [25] 盘库总重量上传成功：weight = 9382
+[2024-07-23 18:35:23 4289] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 18:40:23 5162] [DEBUG] [25] 盘库总重量上传成功：weight = 9416
+[2024-07-23 18:40:23 5795] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 18:45:23 6788] [DEBUG] [25] 盘库总重量上传成功：weight = 9513
+[2024-07-23 18:45:23 7407] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 18:50:23 8395] [DEBUG] [25] 盘库总重量上传成功：weight = 9527
+[2024-07-23 18:50:23 9037] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 18:55:23 9940] [DEBUG] [25] 盘库总重量上传成功：weight = 9534
+[2024-07-23 18:55:24 0560] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 19:00:24 1405] [DEBUG] [25] 盘库总重量上传成功：weight = 9166
+[2024-07-23 19:00:24 1973] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 19:05:24 2920] [DEBUG] [25] 盘库总重量上传成功：weight = 9034
+[2024-07-23 19:05:24 3516] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 19:10:24 4769] [DEBUG] [25] 盘库总重量上传成功：weight = 8952
+[2024-07-23 19:10:24 5378] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 19:15:24 6288] [DEBUG] [25] 盘库总重量上传成功：weight = 8889
+[2024-07-23 19:15:24 6934] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 19:20:24 7898] [DEBUG] [25] 盘库总重量上传成功：weight = 8887
+[2024-07-23 19:20:24 8509] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 19:25:24 9416] [DEBUG] [25] 盘库总重量上传成功：weight = 8887
+[2024-07-23 19:25:25 0035] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 19:30:25 1073] [DEBUG] [25] 盘库总重量上传成功：weight = 8884
+[2024-07-23 19:30:25 1747] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 19:35:25 2621] [DEBUG] [25] 盘库总重量上传成功：weight = 8881
+[2024-07-23 19:35:25 3231] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 19:40:25 4187] [DEBUG] [25] 盘库总重量上传成功：weight = 8878
+[2024-07-23 19:40:25 4796] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 19:45:25 5750] [DEBUG] [25] 盘库总重量上传成功：weight = 8879
+[2024-07-23 19:45:25 6401] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 19:50:25 7264] [DEBUG] [25] 盘库总重量上传成功：weight = 8878
+[2024-07-23 19:50:25 7875] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 19:55:25 8902] [DEBUG] [25] 盘库总重量上传成功：weight = 8876
+[2024-07-23 19:55:25 9580] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 20:00:26 0504] [DEBUG] [25] 盘库总重量上传成功：weight = 8875
+[2024-07-23 20:00:26 1143] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 20:05:26 2042] [DEBUG] [25] 盘库总重量上传成功：weight = 8873
+[2024-07-23 20:05:26 2630] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 20:10:26 3641] [DEBUG] [25] 盘库总重量上传成功：weight = 8873
+[2024-07-23 20:10:26 4245] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 20:15:26 5307] [DEBUG] [25] 盘库总重量上传成功：weight = 8872
+[2024-07-23 20:15:26 5975] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 20:20:26 6985] [DEBUG] [25] 盘库总重量上传成功：weight = 8872
+[2024-07-23 20:20:26 7614] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 20:25:26 8593] [DEBUG] [25] 盘库总重量上传成功：weight = 8871
+[2024-07-23 20:25:26 9224] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 20:30:27 0165] [DEBUG] [25] 盘库总重量上传成功：weight = 8868
+[2024-07-23 20:30:27 0814] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 20:35:27 1751] [DEBUG] [25] 盘库总重量上传成功：weight = 8866
+[2024-07-23 20:35:27 2413] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 20:40:27 3326] [DEBUG] [25] 盘库总重量上传成功：weight = 8864
+[2024-07-23 20:40:27 3942] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 20:45:27 4884] [DEBUG] [25] 盘库总重量上传成功：weight = 8864
+[2024-07-23 20:45:27 5501] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 20:50:27 6543] [DEBUG] [25] 盘库总重量上传成功：weight = 8863
+[2024-07-23 20:50:27 7233] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 20:55:27 8234] [DEBUG] [25] 盘库总重量上传成功：weight = 8862
+[2024-07-23 20:55:27 8855] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 21:00:27 9790] [DEBUG] [25] 盘库总重量上传成功：weight = 8862
+[2024-07-23 21:00:28 0411] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 21:05:28 1520] [DEBUG] [25] 盘库总重量上传成功：weight = 8859
+[2024-07-23 21:05:28 2199] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 21:10:28 3262] [DEBUG] [25] 盘库总重量上传成功：weight = 8859
+[2024-07-23 21:10:28 3948] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 21:15:28 4902] [DEBUG] [25] 盘库总重量上传成功：weight = 8858
+[2024-07-23 21:15:28 5555] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 21:20:28 6642] [DEBUG] [25] 盘库总重量上传成功：weight = 8858
+[2024-07-23 21:20:28 7304] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 21:25:28 8269] [DEBUG] [25] 盘库总重量上传成功：weight = 8857
+[2024-07-23 21:25:28 8846] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 21:30:28 9747] [DEBUG] [25] 盘库总重量上传成功：weight = 8856
+[2024-07-23 21:30:29 0376] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 21:35:29 1336] [DEBUG] [25] 盘库总重量上传成功：weight = 8855
+[2024-07-23 21:35:29 1956] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 21:40:29 3051] [DEBUG] [25] 盘库总重量上传成功：weight = 8853
+[2024-07-23 21:40:29 3706] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 21:45:29 4791] [DEBUG] [25] 盘库总重量上传成功：weight = 8852
+[2024-07-23 21:45:29 5463] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 21:50:29 6756] [DEBUG] [25] 盘库总重量上传成功：weight = 8852
+[2024-07-23 21:50:29 7378] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 21:55:29 8439] [DEBUG] [25] 盘库总重量上传成功：weight = 8851
+[2024-07-23 21:55:29 9121] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 22:00:30 0002] [DEBUG] [25] 盘库总重量上传成功：weight = 8852
+[2024-07-23 22:00:30 0592] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 22:05:30 1474] [DEBUG] [25] 盘库总重量上传成功：weight = 8852
+[2024-07-23 22:05:30 2061] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 22:10:30 2952] [DEBUG] [25] 盘库总重量上传成功：weight = 8851
+[2024-07-23 22:10:30 3527] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 22:15:30 4544] [DEBUG] [25] 盘库总重量上传成功：weight = 8851
+[2024-07-23 22:15:30 5167] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 22:20:30 6028] [DEBUG] [25] 盘库总重量上传成功：weight = 8851
+[2024-07-23 22:20:30 6598] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 22:25:30 7587] [DEBUG] [25] 盘库总重量上传成功：weight = 8851
+[2024-07-23 22:25:30 8179] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 22:30:30 9138] [DEBUG] [25] 盘库总重量上传成功：weight = 8850
+[2024-07-23 22:30:30 9753] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 22:35:31 0740] [DEBUG] [25] 盘库总重量上传成功：weight = 8850
+[2024-07-23 22:35:31 1340] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 22:40:31 2300] [DEBUG] [25] 盘库总重量上传成功：weight = 8850
+[2024-07-23 22:40:31 2904] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 22:45:31 3862] [DEBUG] [25] 盘库总重量上传成功：weight = 8848
+[2024-07-23 22:45:31 4479] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 22:50:31 5453] [DEBUG] [25] 盘库总重量上传成功：weight = 8848
+[2024-07-23 22:50:31 6083] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 22:55:31 7058] [DEBUG] [25] 盘库总重量上传成功：weight = 8849
+[2024-07-23 22:55:31 7674] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 23:00:31 8710] [DEBUG] [25] 盘库总重量上传成功：weight = 8847
+[2024-07-23 23:00:31 9406] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 23:05:32 0464] [DEBUG] [25] 盘库总重量上传成功：weight = 8849
+[2024-07-23 23:05:32 1137] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 23:10:32 2018] [DEBUG] [25] 盘库总重量上传成功：weight = 8847
+[2024-07-23 23:10:32 2591] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 23:15:32 3609] [DEBUG] [25] 盘库总重量上传成功：weight = 8847
+[2024-07-23 23:15:32 4224] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 23:20:32 5058] [DEBUG] [25] 盘库总重量上传成功：weight = 8848
+[2024-07-23 23:20:32 5646] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 23:25:32 6660] [DEBUG] [25] 盘库总重量上传成功：weight = 8847
+[2024-07-23 23:25:32 7289] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 23:30:32 8396] [DEBUG] [25] 盘库总重量上传成功：weight = 8847
+[2024-07-23 23:30:32 9087] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 23:35:33 0079] [DEBUG] [25] 盘库总重量上传成功：weight = 8848
+[2024-07-23 23:35:33 0689] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 23:40:33 1704] [DEBUG] [25] 盘库总重量上传成功：weight = 8847
+[2024-07-23 23:40:33 2312] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 23:45:33 3168] [DEBUG] [25] 盘库总重量上传成功：weight = 8847
+[2024-07-23 23:45:33 3727] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 23:50:33 4646] [DEBUG] [25] 盘库总重量上传成功：weight = 8846
+[2024-07-23 23:50:33 5259] [DEBUG] [25] 盘库数据上传成功!
+[2024-07-23 23:55:33 6204] [DEBUG] [25] 盘库总重量上传成功：weight = 8847
+[2024-07-23 23:55:33 6773] [DEBUG] [25] 盘库数据上传成功!

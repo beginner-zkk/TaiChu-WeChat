@@ -1,0 +1,413 @@
+[2024-07-09 07:01:51 3279] [DEBUG] [6] 料仓skuid读取完毕
+[2024-07-09 07:01:51 6441] [ERROR] [6] 连接plc失败！错误码：-1; Socket Connect 192.168.8.10:102 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.10:102
+[2024-07-09 07:01:51 7832] [DEBUG] [6] 采集器初始化完成
+[2024-07-09 07:01:52 4376] [INFO] [1] 数据库清理已完成，清理数量： t_info_record = 0t_price_info_record = 0t_power_record = 0
+[2024-07-09 07:01:52 5655] [ERROR] [6] Error: token获取异常  System.AggregateException: 发生一个或多个错误。 ---> Flurl.Http.FlurlHttpException: Call failed. 发送请求时出错。: POST http://47.114.126.3:9993/api/User/innerLogin ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 47.114.126.3:9993
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Flurl.Http.FlurlRequest.<HandleExceptionAsync>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 IOT.Serve.Upload.GetToken() 位置 D:\work\IOT_Price\IOT_Price\IOT_Price\Serve\Upload.cs:行号 283
+---> (内部异常 #0) Flurl.Http.FlurlHttpException: Call failed. 发送请求时出错。: POST http://47.114.126.3:9993/api/User/innerLogin ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 47.114.126.3:9993
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Flurl.Http.FlurlRequest.<HandleExceptionAsync>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()<---
+
+[2024-07-09 07:01:52 5665] [DEBUG] [6] 采集器打开成功
+[2024-07-09 07:01:52 5695] [INFO] [6] MB从站启动成功
+[2024-07-09 07:01:52 5851] [INFO] [24] 开启数据采集
+[2024-07-09 07:01:55 4443] [ERROR] [24] GX1 : Socket Connect 192.168.8.20:502 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.20:502
+[2024-07-09 07:01:55 6772] [ERROR] [24] PLC1 : Socket Connect 192.168.8.10:102 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.10:102
+[2024-07-09 07:01:59 5208] [ERROR] [24] GX1 : Socket Connect 192.168.8.20:502 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.20:502
+[2024-07-09 07:01:59 7392] [ERROR] [24] PLC1 : Socket Connect 192.168.8.10:102 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.10:102
+[2024-07-09 07:02:02 5826] [ERROR] [6] Error: token获取异常  System.AggregateException: 发生一个或多个错误。 ---> Flurl.Http.FlurlHttpException: Call failed. 发送请求时出错。: POST http://47.114.126.3:9993/api/User/innerLogin ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 47.114.126.3:9993
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Flurl.Http.FlurlRequest.<HandleExceptionAsync>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 IOT.Serve.Upload.GetToken() 位置 D:\work\IOT_Price\IOT_Price\IOT_Price\Serve\Upload.cs:行号 283
+---> (内部异常 #0) Flurl.Http.FlurlHttpException: Call failed. 发送请求时出错。: POST http://47.114.126.3:9993/api/User/innerLogin ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 47.114.126.3:9993
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Flurl.Http.FlurlRequest.<HandleExceptionAsync>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()<---
+
+[2024-07-09 07:02:03 5770] [ERROR] [24] GX1 : Socket Connect 192.168.8.20:502 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.20:502
+[2024-07-09 07:02:03 7957] [ERROR] [24] PLC1 : Socket Connect 192.168.8.10:102 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.10:102
+[2024-07-09 07:02:08 2030] [ERROR] [24] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-09 07:02:12 3339] [ERROR] [24] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-09 07:02:12 8298] [INFO] [6] 开启上传任务！
+[2024-07-09 07:02:16 5877] [ERROR] [24] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-09 07:02:20 7274] [ERROR] [24] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-09 07:02:23 0426] [DEBUG] [27] 盘库总重量上传成功：weight = 9739
+[2024-07-09 07:02:23 3446] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 07:02:24 9918] [ERROR] [24] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-09 07:02:29 3492] [ERROR] [24] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-09 07:02:33 7000] [ERROR] [24] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-09 07:02:38 0608] [ERROR] [24] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-09 07:07:23 4441] [DEBUG] [27] 盘库总重量上传成功：weight = 9693
+[2024-07-09 07:07:23 5068] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 07:12:23 6135] [DEBUG] [27] 盘库总重量上传成功：weight = 9638
+[2024-07-09 07:12:23 6758] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 07:17:23 7709] [DEBUG] [27] 盘库总重量上传成功：weight = 9649
+[2024-07-09 07:17:23 8342] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 07:22:23 9323] [DEBUG] [27] 盘库总重量上传成功：weight = 9627
+[2024-07-09 07:22:23 9928] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 07:27:24 0930] [DEBUG] [27] 盘库总重量上传成功：weight = 9625
+[2024-07-09 07:27:24 1512] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 07:32:24 2437] [DEBUG] [27] 盘库总重量上传成功：weight = 9643
+[2024-07-09 07:32:24 3003] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 07:37:24 3907] [DEBUG] [27] 盘库总重量上传成功：weight = 9684
+[2024-07-09 07:37:24 4497] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 07:42:24 5467] [DEBUG] [27] 盘库总重量上传成功：weight = 9635
+[2024-07-09 07:42:24 6072] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 07:47:24 6991] [DEBUG] [27] 盘库总重量上传成功：weight = 9710
+[2024-07-09 07:47:24 7571] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 07:52:24 8464] [DEBUG] [27] 盘库总重量上传成功：weight = 9710
+[2024-07-09 07:52:24 9072] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 07:57:24 9966] [DEBUG] [27] 盘库总重量上传成功：weight = 9710
+[2024-07-09 07:57:25 0582] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 08:02:25 1472] [DEBUG] [27] 盘库总重量上传成功：weight = 9710
+[2024-07-09 08:02:25 2057] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 08:07:25 3034] [DEBUG] [27] 盘库总重量上传成功：weight = 9710
+[2024-07-09 08:07:25 3639] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 08:12:25 4643] [DEBUG] [27] 盘库总重量上传成功：weight = 9557
+[2024-07-09 08:12:25 5351] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 08:17:25 6218] [DEBUG] [27] 盘库总重量上传成功：weight = 9394
+[2024-07-09 08:17:25 6808] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 08:22:25 7724] [DEBUG] [27] 盘库总重量上传成功：weight = 9342
+[2024-07-09 08:22:25 8294] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 08:27:25 9297] [DEBUG] [27] 盘库总重量上传成功：weight = 9351
+[2024-07-09 08:27:26 0016] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 08:32:26 1055] [DEBUG] [27] 盘库总重量上传成功：weight = 9466
+[2024-07-09 08:32:26 1726] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 08:37:26 2634] [DEBUG] [27] 盘库总重量上传成功：weight = 9635
+[2024-07-09 08:37:26 3230] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 08:42:26 4228] [DEBUG] [27] 盘库总重量上传成功：weight = 9732
+[2024-07-09 08:42:26 4850] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 08:47:26 5876] [DEBUG] [27] 盘库总重量上传成功：weight = 9926
+[2024-07-09 08:47:26 6547] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 08:52:26 7544] [DEBUG] [27] 盘库总重量上传成功：weight = 9878
+[2024-07-09 08:52:26 8200] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 08:57:26 9139] [DEBUG] [27] 盘库总重量上传成功：weight = 9896
+[2024-07-09 08:57:26 9762] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 09:02:27 0748] [DEBUG] [27] 盘库总重量上传成功：weight = 10021
+[2024-07-09 09:02:27 1413] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 09:07:27 2314] [DEBUG] [27] 盘库总重量上传成功：weight = 9996
+[2024-07-09 09:07:27 2913] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 09:12:27 3790] [DEBUG] [27] 盘库总重量上传成功：weight = 10006
+[2024-07-09 09:12:27 4385] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 09:17:27 5396] [DEBUG] [27] 盘库总重量上传成功：weight = 10133
+[2024-07-09 09:17:27 6027] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 09:22:27 7063] [DEBUG] [27] 盘库总重量上传成功：weight = 10313
+[2024-07-09 09:22:27 7653] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 09:27:27 8495] [DEBUG] [27] 盘库总重量上传成功：weight = 10290
+[2024-07-09 09:27:27 9085] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 09:32:28 0025] [DEBUG] [27] 盘库总重量上传成功：weight = 10133
+[2024-07-09 09:32:28 0611] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 09:37:28 1484] [DEBUG] [27] 盘库总重量上传成功：weight = 9926
+[2024-07-09 09:37:28 2103] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 09:42:28 3103] [DEBUG] [27] 盘库总重量上传成功：weight = 9133
+[2024-07-09 09:42:28 3749] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 09:47:28 4589] [DEBUG] [27] 盘库总重量上传成功：weight = 8820
+[2024-07-09 09:47:28 5167] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 09:52:28 6138] [DEBUG] [27] 盘库总重量上传成功：weight = 8677
+[2024-07-09 09:52:28 6829] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 09:57:28 7835] [DEBUG] [27] 盘库总重量上传成功：weight = 8646
+[2024-07-09 09:57:28 8467] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 10:02:28 9446] [DEBUG] [27] 盘库总重量上传成功：weight = 8646
+[2024-07-09 10:02:29 0044] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 10:07:29 0991] [DEBUG] [27] 盘库总重量上传成功：weight = 8673
+[2024-07-09 10:07:29 1604] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 10:12:29 2477] [DEBUG] [27] 盘库总重量上传成功：weight = 8795
+[2024-07-09 10:12:29 3063] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 10:17:29 4036] [DEBUG] [27] 盘库总重量上传成功：weight = 8936
+[2024-07-09 10:17:29 4672] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 10:22:29 5718] [DEBUG] [27] 盘库总重量上传成功：weight = 9023
+[2024-07-09 10:22:29 6381] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 10:27:29 7345] [DEBUG] [27] 盘库总重量上传成功：weight = 9019
+[2024-07-09 10:27:29 7967] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 10:32:29 8857] [DEBUG] [27] 盘库总重量上传成功：weight = 9016
+[2024-07-09 10:32:29 9447] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 10:37:30 0681] [DEBUG] [27] 盘库总重量上传成功：weight = 9021
+[2024-07-09 10:37:30 1452] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 10:42:30 2442] [DEBUG] [27] 盘库总重量上传成功：weight = 9060
+[2024-07-09 10:42:30 3072] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 10:47:30 4185] [DEBUG] [27] 盘库总重量上传成功：weight = 9393
+[2024-07-09 10:47:30 4902] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 10:52:30 5945] [DEBUG] [27] 盘库总重量上传成功：weight = 9572
+[2024-07-09 10:52:30 6642] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 10:57:30 7719] [DEBUG] [27] 盘库总重量上传成功：weight = 9562
+[2024-07-09 10:57:30 8385] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 11:02:30 9433] [DEBUG] [27] 盘库总重量上传成功：weight = 9688
+[2024-07-09 11:02:31 0105] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 11:07:31 1067] [DEBUG] [27] 盘库总重量上传成功：weight = 9738
+[2024-07-09 11:07:31 1692] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 11:12:31 2634] [DEBUG] [27] 盘库总重量上传成功：weight = 9659
+[2024-07-09 11:12:31 3232] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 11:17:31 4348] [DEBUG] [27] 盘库总重量上传成功：weight = 9736
+[2024-07-09 11:17:31 5039] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 11:22:31 5938] [DEBUG] [27] 盘库总重量上传成功：weight = 9784
+[2024-07-09 11:22:31 6506] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 11:27:31 7421] [DEBUG] [27] 盘库总重量上传成功：weight = 9934
+[2024-07-09 11:27:31 8067] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 11:32:31 8927] [DEBUG] [27] 盘库总重量上传成功：weight = 10101
+[2024-07-09 11:32:31 9519] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 11:37:32 0553] [DEBUG] [27] 盘库总重量上传成功：weight = 10203
+[2024-07-09 11:37:32 1248] [DEBUG] [27] 盘库数据上传成功!
+[2024-07-09 14:34:33 5838] [DEBUG] [6] 料仓skuid读取完毕
+[2024-07-09 14:34:33 9145] [ERROR] [6] 连接plc失败！错误码：-1; Socket Connect 192.168.8.10:102 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.10:102
+[2024-07-09 14:34:34 0527] [DEBUG] [6] 采集器初始化完成
+[2024-07-09 14:34:34 6632] [INFO] [1] 数据库清理已完成，清理数量： t_info_record = 0t_price_info_record = 0t_power_record = 0
+[2024-07-09 14:34:34 8360] [ERROR] [6] Error: token获取异常  System.AggregateException: 发生一个或多个错误。 ---> Flurl.Http.FlurlHttpException: Call failed. 发送请求时出错。: POST http://47.114.126.3:9993/api/User/innerLogin ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 47.114.126.3:9993
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Flurl.Http.FlurlRequest.<HandleExceptionAsync>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 IOT.Serve.Upload.GetToken() 位置 D:\work\IOT_Price\IOT_Price\IOT_Price\Serve\Upload.cs:行号 283
+---> (内部异常 #0) Flurl.Http.FlurlHttpException: Call failed. 发送请求时出错。: POST http://47.114.126.3:9993/api/User/innerLogin ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 47.114.126.3:9993
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Flurl.Http.FlurlRequest.<HandleExceptionAsync>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()<---
+
+[2024-07-09 14:34:34 8380] [DEBUG] [6] 采集器打开成功
+[2024-07-09 14:34:34 8420] [INFO] [6] MB从站启动成功
+[2024-07-09 14:34:34 8590] [INFO] [25] 开启数据采集
+[2024-07-09 14:34:37 7420] [ERROR] [25] GX1 : Socket Connect 192.168.8.20:502 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.20:502
+[2024-07-09 14:34:37 9735] [ERROR] [25] PLC1 : Socket Connect 192.168.8.10:102 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.10:102
+[2024-07-09 14:34:41 8173] [ERROR] [25] GX1 : Socket Connect 192.168.8.20:502 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.20:502
+[2024-07-09 14:34:42 0352] [ERROR] [25] PLC1 : Socket Connect 192.168.8.10:102 Exception -> 套接字操作尝试一个无法连接的主机。 192.168.8.10:102
+[2024-07-09 14:34:44 8525] [ERROR] [6] Error: token获取异常  System.AggregateException: 发生一个或多个错误。 ---> Flurl.Http.FlurlHttpException: Call failed. 发送请求时出错。: POST http://47.114.126.3:9993/api/User/innerLogin ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 47.114.126.3:9993
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Flurl.Http.FlurlRequest.<HandleExceptionAsync>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 IOT.Serve.Upload.GetToken() 位置 D:\work\IOT_Price\IOT_Price\IOT_Price\Serve\Upload.cs:行号 283
+---> (内部异常 #0) Flurl.Http.FlurlHttpException: Call failed. 发送请求时出错。: POST http://47.114.126.3:9993/api/User/innerLogin ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 47.114.126.3:9993
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Flurl.Http.FlurlRequest.<HandleExceptionAsync>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Flurl.Http.FlurlRequest.<SendAsync>d__29.MoveNext()<---
+
+[2024-07-09 14:34:46 0011] [ERROR] [25] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-09 14:34:50 1361] [ERROR] [25] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-09 14:34:54 1576] [ERROR] [25] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-09 14:34:55 0983] [INFO] [6] 开启上传任务！
+[2024-07-09 14:34:58 1839] [ERROR] [25] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-09 14:35:02 2168] [ERROR] [25] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-09 14:35:05 0652] [DEBUG] [28] 盘库总重量上传成功：weight = 10174
+[2024-07-09 14:35:05 1547] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 14:35:06 4722] [ERROR] [25] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-09 14:35:10 9342] [ERROR] [25] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-09 14:35:15 4019] [ERROR] [25] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-09 14:35:19 7562] [ERROR] [25] GX1 : 连接 192.168.8.20:502 失败，超时时间为 100 ms
+[2024-07-09 14:40:05 2525] [DEBUG] [28] 盘库总重量上传成功：weight = 10195
+[2024-07-09 14:40:05 3126] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 14:45:05 4041] [DEBUG] [28] 盘库总重量上传成功：weight = 10267
+[2024-07-09 14:45:05 4649] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 14:50:05 5684] [DEBUG] [28] 盘库总重量上传成功：weight = 10285
+[2024-07-09 14:50:05 6309] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 14:55:05 7174] [DEBUG] [28] 盘库总重量上传成功：weight = 10380
+[2024-07-09 14:55:05 7778] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 15:00:05 8732] [DEBUG] [28] 盘库总重量上传成功：weight = 10300
+[2024-07-09 15:00:05 9348] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 15:05:06 0305] [DEBUG] [28] 盘库总重量上传成功：weight = 10631
+[2024-07-09 15:05:06 0974] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 15:10:06 2009] [DEBUG] [28] 盘库总重量上传成功：weight = 10688
+[2024-07-09 15:10:06 2653] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 15:15:06 3651] [DEBUG] [28] 盘库总重量上传成功：weight = 10736
+[2024-07-09 15:15:06 4296] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 15:20:06 5277] [DEBUG] [28] 盘库总重量上传成功：weight = 10710
+[2024-07-09 15:20:06 5948] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 15:25:06 6921] [DEBUG] [28] 盘库总重量上传成功：weight = 10873
+[2024-07-09 15:25:06 7546] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 15:30:06 8530] [DEBUG] [28] 盘库总重量上传成功：weight = 10836
+[2024-07-09 15:30:06 9158] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 15:35:07 0029] [DEBUG] [28] 盘库总重量上传成功：weight = 10731
+[2024-07-09 15:35:07 0626] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 15:40:07 1650] [DEBUG] [28] 盘库总重量上传成功：weight = 10491
+[2024-07-09 15:40:07 2293] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 15:45:07 3340] [DEBUG] [28] 盘库总重量上传成功：weight = 10250
+[2024-07-09 15:45:07 4015] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 15:50:07 5040] [DEBUG] [28] 盘库总重量上传成功：weight = 10091
+[2024-07-09 15:50:07 5655] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 15:55:07 6690] [DEBUG] [28] 盘库总重量上传成功：weight = 10019
+[2024-07-09 15:55:07 7335] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 16:00:07 8343] [DEBUG] [28] 盘库总重量上传成功：weight = 10074
+[2024-07-09 16:00:07 8955] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 16:05:07 9848] [DEBUG] [28] 盘库总重量上传成功：weight = 10193
+[2024-07-09 16:05:08 0429] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 16:10:08 1446] [DEBUG] [28] 盘库总重量上传成功：weight = 10341
+[2024-07-09 16:10:08 2068] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 16:15:08 2941] [DEBUG] [28] 盘库总重量上传成功：weight = 10464
+[2024-07-09 16:15:08 3530] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 16:20:08 4473] [DEBUG] [28] 盘库总重量上传成功：weight = 10579
+[2024-07-09 16:20:08 5049] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 16:25:08 5931] [DEBUG] [28] 盘库总重量上传成功：weight = 10714
+[2024-07-09 16:25:08 6510] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 16:30:08 7569] [DEBUG] [28] 盘库总重量上传成功：weight = 10782
+[2024-07-09 16:30:08 8255] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 16:35:08 9202] [DEBUG] [28] 盘库总重量上传成功：weight = 11005
+[2024-07-09 16:35:08 9830] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 16:40:09 0925] [DEBUG] [28] 盘库总重量上传成功：weight = 10967
+[2024-07-09 16:40:09 1604] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 16:45:09 2551] [DEBUG] [28] 盘库总重量上传成功：weight = 10988
+[2024-07-09 16:45:09 3149] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 16:50:09 6163] [DEBUG] [28] 盘库总重量上传成功：weight = 10995
+[2024-07-09 16:50:09 6852] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 16:55:09 7705] [DEBUG] [28] 盘库总重量上传成功：weight = 11007
+[2024-07-09 16:55:09 8273] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 17:00:09 9092] [DEBUG] [28] 盘库总重量上传成功：weight = 10913
+[2024-07-09 17:00:09 9660] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 17:05:10 0597] [DEBUG] [28] 盘库总重量上传成功：weight = 10947
+[2024-07-09 17:05:10 1222] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 17:10:10 2202] [DEBUG] [28] 盘库总重量上传成功：weight = 10921
+[2024-07-09 17:10:10 2808] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 17:15:10 3889] [DEBUG] [28] 盘库总重量上传成功：weight = 10957
+[2024-07-09 17:15:10 4605] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 17:20:10 5556] [DEBUG] [28] 盘库总重量上传成功：weight = 11139
+[2024-07-09 17:20:10 6207] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 17:25:10 7141] [DEBUG] [28] 盘库总重量上传成功：weight = 11312
+[2024-07-09 17:25:10 7766] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 17:30:10 8981] [DEBUG] [28] 盘库总重量上传成功：weight = 11503
+[2024-07-09 17:30:10 9743] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 17:35:11 0586] [DEBUG] [28] 盘库总重量上传成功：weight = 11625
+[2024-07-09 17:35:11 1181] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 17:40:11 2347] [DEBUG] [28] 盘库总重量上传成功：weight = 11771
+[2024-07-09 17:40:11 3063] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 17:45:11 4016] [DEBUG] [28] 盘库总重量上传成功：weight = 11653
+[2024-07-09 17:45:11 4677] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 17:50:11 5560] [DEBUG] [28] 盘库总重量上传成功：weight = 11568
+[2024-07-09 17:50:11 6152] [DEBUG] [28] 盘库数据上传成功!
+[2024-07-09 17:55:11 7141] [DEBUG] [28] 盘库总重量上传成功：weight = 11453
+[2024-07-09 17:55:11 7847] [DEBUG] [28] 盘库数据上传成功!
